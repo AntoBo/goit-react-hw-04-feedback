@@ -1,7 +1,4 @@
-const Statistics = ({ good, neutral, bad }) => {
-  const countTotalFeedback = () => good + neutral + bad;
-  const countPositiveFeedbackPercentage = () =>
-    `${((good / countTotalFeedback()) * 100).toFixed()}%`;
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <>
       <ul>
@@ -10,8 +7,8 @@ const Statistics = ({ good, neutral, bad }) => {
         <li>Bad: {bad}</li>
       </ul>
       <ul>
-        <li>Total: {countTotalFeedback()}</li>
-        <li>Positive feedback: {countPositiveFeedbackPercentage()}</li>
+        <li>Total: {total}</li>
+        <li>Positive feedback: {positivePercentage}%</li>
       </ul>
     </>
   );
