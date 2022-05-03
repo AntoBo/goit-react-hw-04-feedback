@@ -1,3 +1,5 @@
+import Pt from 'prop-types';
+
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <>
@@ -13,5 +15,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     </>
   );
 };
+
+Statistics.propTypes = Pt.arrayOf(Pt.number);
 
 export default Statistics;

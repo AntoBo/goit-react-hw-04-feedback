@@ -1,3 +1,5 @@
+import Pt from 'prop-types';
+
 const Section = ({ title, children }) => {
   return (
     <section>
@@ -6,5 +8,7 @@ const Section = ({ title, children }) => {
     </section>
   );
 };
+
+Section.protoTypes = { title: Pt.string };
 
 export default Section;
