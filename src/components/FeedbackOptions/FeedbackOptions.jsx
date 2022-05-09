@@ -1,5 +1,3 @@
-// import Pt from 'prop-types';
-
 const FeedbackOptions = ({ vote }) => {
   return (
     <>

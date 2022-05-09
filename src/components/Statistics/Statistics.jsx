@@ -16,6 +16,6 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   );
 };
 
-Statistics.propTypes = Pt.arrayOf(Pt.number);
+Statistics.propTypes = Pt.arrayOf(Pt.number.isRequired);
 
 export default Statistics;
