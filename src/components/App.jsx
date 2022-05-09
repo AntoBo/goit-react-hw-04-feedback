@@ -5,6 +5,8 @@ import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Notification from './Notification/Notification';
 import Section from './Section/Section';
 
+//refactor it on hooks
+
 export class App extends Component {
   state = { good: 0, neutral: 0, bad: 0 };
 
